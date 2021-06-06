@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Type Me is a typing application">
+  <meta name="author" content="iTarunGM">
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="Type Me" /> <!-- website name -->
+  <meta property="og:site" content="https://file-to-base64.web.app/" /> <!-- website link -->
+  <meta property="og:title" content="TypeMe - A Typing Application" /> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="A Typing Application" /> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
+  <title>Type Me</title>
+  <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+
+<body>
+
+  <section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="tm-lights-container">
+        <img src="img/light.png" alt="Light" class="light light-1">
+        <img src="img/light.png" alt="Light" class="light light-2">
+        <img src="img/light.png" alt="Light" class="light light-3">
+      </div>
+      <div class="main-content">
+        <div class="container" id="typer">
+          <div class="row justify-content-between text-white">
+            <div class="col-3">
+              <div>
+                Time Left <p class="h2"><span id="time">10</span>s</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div>
+                Score <p class="h2"><span id="score">0</span></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card-body mt-3">
+            <div class="d-flex justify-content-center text-white ">
+              <p class="h1" id="rando"></p>
+            </div>
+            <div class="input">
+              <input type="text" autocomplete="off" class="form-control" id="inputBox" placeholder="Type Me">
+            </div>
+          </div>
+
+          <div class="high-score d-flex justify-content-center text-white mt-5">
+            <div>
+              High Score
+              <p class="h2" id="highScore">100</p>
+            </div>
+
+          </div>
+        </div>
+        <div id="gameOverBox" class="hidden d-flex justify-content-center">
+          <div class="">
+            <div class="gameover">
+              <p> GAME </p>
+              <p> OVER </p>
+            </div>
+            <div class="continue">
+              <p> CONTINUE? </p>
+            </div>
+
+            <div class="opcoes d-flex justify-content-center">
+              <div class="yes" id="yes"> <span> YES </span> </div>
+              <div class="no" id="no"> <span> NO </span> </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <div>
+    </div>
+  </footer>
+
+  <!-- Button trigger modal -->
+  <button type="button" id="modalCall" class="btn btn-primary hidden" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Scoreboard</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p class="h1" id="scoreBoard"> 100 </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p class="text-center text-white mt-2">Made With ❤️ by <a href="https://github.com/itarungm" target="_blank">iTarunGM</a></p>
+    </div>
+  </footer>
+  <audio src="./sound/error.mp3" class="hidden" id="errSound"></audio>
+
+  <!-- Scripts -->
+  <script src="./js/master.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
