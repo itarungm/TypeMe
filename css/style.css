@@ -66,22 +66,37 @@ body { overflow-x: hidden; }
 
   .light-1, .light-2 { display: none; }
   .tm-lights-container { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  .input{
+	width: 70%;
+}
 }
 
 @media screen and (max-width: 650px) {
   .tm-welcome-content {  margin-bottom: 190px; }
+  .input{
+	width: 70%;
+}
 }
 
 @media screen and (max-width: 550px) {
   .tm-welcome-content { margin-bottom: 130px; }
+  .input{
+	  width: 70%;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .tm-welcome-content { margin-bottom: 90px; }
+  .input{
+	width: 90%;
+}
 }
 
 @media screen and (max-width: 370px) {
   .tm-welcome-content { margin-bottom: 60px; }
+  .input{
+	width: 90%;
+}
 }
 
 /* Game Over */
